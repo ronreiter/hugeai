@@ -83,10 +83,10 @@ def main():
     parser.add_argument("--width", type=int, default=1536, help="Image width (default: 1536)")
     parser.add_argument("--height", type=int, default=1024, help="Image height (default: 1024)")
     parser.add_argument("--iterations", type=int, default=30, help="Iterations (default: 25)")
-    parser.add_argument("--guidance", type=float, default=2.5, help="Guidance (default: 2.5)")
+    parser.add_argument("--guidance", type=float, default=3.5, help="Guidance (default: 3.5)")
     parser.add_argument("--seed", type=int, default=0, help="Seed start (default: 0)")
     parser.add_argument("--num", type=int, default=1, help="Number of images to generate (default: 1)")
-    parser.add_argument("--sr", type=int, choices=[1, 2, 4, 8], default=8, help="Super resolution scale (1, 2, 4, or 8) (default: 8)")
+    parser.add_argument("--sr", type=int, choices=[1, 2, 4, 8], default=4, help="Super resolution scale (1, 2, 4, or 8) (default: 8)")
 
     args = parser.parse_args()
 
