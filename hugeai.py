@@ -38,7 +38,7 @@ diffusers.models.transformers.transformer_flux.rope = new_flux_rope
 def apply_super_resolution(image, scale):
     model = RealESRGAN.RealESRGAN(torch.device("mps"), scale=scale)
     model.load_weights(UPSCALE_MODEL, download=True)
-    #model.load_weights(f'weights/RealESRGAN_x{scale}.pth', download=True)
+    # model.load_weights(f'weights/RealESRGAN_x{scale}.pth', download=True)
     return model.predict(image)
 
 
@@ -86,7 +86,7 @@ def main():
     parser.add_argument("--guidance", type=float, default=3.5, help="Guidance (default: 3.5)")
     parser.add_argument("--seed", type=int, default=0, help="Seed start (default: 0)")
     parser.add_argument("--num", type=int, default=1, help="Number of images to generate (default: 1)")
-    parser.add_argument("--sr", type=int, choices=[1, 2, 4, 8], default=4, help="Super resolution scale (1, 2, 4, or 8) (default: 8)")
+    parser.add_argument("--sr", type=int, choices=[1, 2, 4, 8], default=8, help="Super resolution scale (1, 2, 4, or 8) (default: 8)")
 
     args = parser.parse_args()
 
