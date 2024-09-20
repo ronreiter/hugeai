@@ -72,7 +72,7 @@ def generate_images(prompt, width, height, guidance, iterations, seed, num_image
             out = apply_super_resolution(out, sr_scale)
 
         # Save image
-        filename = f"outputs/{slug}_it_{iterations}_{'sr_' + str(sr_scale) if sr_scale else 'original'}_num_{i+1}.png"
+        filename = f"outputs/{slug}_it_{iterations}_guidance_{guidance}_{'sr_' + str(sr_scale) if sr_scale else 'original'}_num_{i+1}.png"
         out.save(filename)
         print(f"Saved image: {filename}")
 
