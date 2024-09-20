@@ -53,7 +53,7 @@ python flux_cli_tool.py "your prompt here" [options]
 - `--width`: Image width (default: 1536)
 - `--height`: Image height (default: 1024)
 - `--iterations`: Number of inference steps (default: 30)
-- `--guidance`: Guidance scale (default: 2.5)
+- `--guidance`: Guidance scale (default: 3.5)
 - `--seed`: Starting seed for image generation (default: 0)
 - `--num`: Number of images to generate (default: 1)
 - `--sr`: Super resolution scale (2, 4, or 8)
@@ -63,7 +63,7 @@ python flux_cli_tool.py "your prompt here" [options]
 Generate 10 images with a specific prompt and default settings (1536x1024, 2.5 guidance scale, 30 iterations, 8x super-resolution, seeds 0-10):
 
 ```
-poetry run python hugeai.py "futuristic city, midnight, huge stars and planets in sky, galaxy, lake, reflection, photo-realistic, vivid colorful lights" --num 10
+poetry run python hugeai.py "futuristic city, industrial, cyberpunk, midnight, stars, huge planets, milky way galaxy in sky, lake, reflection, photo-realistic, ultra realism, vivid colorful lights, cyberpunk space marine holding futuristic rail gun watching the city from afar" --guidance 3.5 --num 20 --seed 2000 --sr 1
 ```
 
 ## Output

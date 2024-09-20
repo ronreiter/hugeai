@@ -32,6 +32,25 @@ test-trackers = ["comet-ml", "dvclive", "tensorboard", "wandb"]
 testing = ["bitsandbytes", "datasets", "diffusers", "evaluate", "parameterized", "pytest (>=7.2.0,<=8.0.0)", "pytest-subtests", "pytest-xdist", "scikit-learn", "scipy", "timm", "torchdata (>=0.8.0)", "torchpippy (>=0.2.0)", "tqdm", "transformers"]
 
 [[package]]
+name = "aura-sr"
+version = "0.0.4"
+description = "GAN-based Super-Resolution for AI generated images, based on the GigaGAN architecture."
+optional = false
+python-versions = "*"
+files = [
+    {file = "aura_sr-0.0.4-py3-none-any.whl", hash = "sha256:c49ecb97c87119e28798ba76371e2d9cee56e0886a9fd106ac677308dd905709"},
+    {file = "aura_sr-0.0.4.tar.gz", hash = "sha256:1ab19f27fa401cf8564ac030fac4fde8db28700d0c21161749f90f68b1ddd96e"},
+]
+
+[package.dependencies]
+einops = "*"
+huggingface-hub = "*"
+numpy = "*"
+safetensors = "*"
+torch = ">=2.0"
+torchvision = "*"
+
+[[package]]
 name = "certifi"
 version = "2024.8.30"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -181,6 +200,17 @@ quality = ["hf-doc-builder (>=0.3.0)", "isort (>=5.5.4)", "ruff (==0.1.5)", "url
 test = ["GitPython (<3.1.19)", "Jinja2", "compel (==0.1.8)", "datasets", "invisible-watermark (>=0.2.0)", "k-diffusion (>=0.0.12)", "librosa", "parameterized", "pytest", "pytest-timeout", "pytest-xdist", "requests-mock (==1.10.0)", "safetensors (>=0.3.1)", "scipy", "sentencepiece (>=0.1.91,!=0.1.92)", "torchvision", "transformers (>=4.41.2)"]
 torch = ["accelerate (>=0.31.0)", "torch (>=1.4)"]
 training = ["Jinja2", "accelerate (>=0.31.0)", "datasets", "peft (>=0.6.0)", "protobuf (>=3.20.3,<4)", "tensorboard"]
+
+[[package]]
+name = "einops"
+version = "0.8.0"
+description = "A new flavour of deep learning operations"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "einops-0.8.0-py3-none-any.whl", hash = "sha256:9572fb63046264a862693b0a87088af3bdc8c068fde03de63453cbbde245465f"},
+    {file = "einops-0.8.0.tar.gz", hash = "sha256:63486517fed345712a8385c100cb279108d9d47e6ae59099b07657e983deae85"},
+]
 
 [[package]]
 name = "filelock"
@@ -1722,4 +1752,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c8da231c8f04cf9fb4880fd0f7a28d650cfcd5becf8c9956962bd3d15576f424"
+content-hash = "d8e70e0bee68f4908f25215477cde3efdcfd91fbd426fcc77983b8bb7d354310"
