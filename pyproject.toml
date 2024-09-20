@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "hugeai"
+version = "0.1.0"
+description = ""
+authors = ["ronreiter <ron.reiter@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.44.2"
+torch = "^2.4.1"
+diffusers = "^0.30.3"
+huggingface-hub = "^0.25.0"
+sentencepiece = "^0.2.0"
+protobuf = "^5.28.2"
+accelerate = "^0.34.2"
+python-dotenv = "^1.0.1"
+pillow = "^10.4.0"
+llvmlite = "^0.43.0"
+numba = "^0.60.0"
+realesrgan = {git = "https://github.com/sberbank-ai/Real-ESRGAN.git"}
+python-slugify = "^8.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
