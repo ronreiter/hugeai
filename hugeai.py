@@ -86,6 +86,7 @@ def generate_images(prompt, width, height, guidance, iterations, seed, num_image
 
             out.save(filename, pnginfo=metadata)
             print(f"Saved image: {filename}")
+            out.show()
 
         # Apply super resolution if requested
         if sr_scale > 1:

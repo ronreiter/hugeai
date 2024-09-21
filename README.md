@@ -60,10 +60,16 @@ python flux_cli_tool.py "your prompt here" [options]
 
 ### Example
 
-Generate 10 images with a specific prompt and default settings (1536x1024, 2.5 guidance scale, 30 iterations, 8x super-resolution, seeds 0-10):
+Generate 10 images with a specific prompt and default settings (1536x1024, 2.5 guidance scale, 50 iterations, 8x super-resolution, seeds 2000-2010):
 
 ```
-poetry run python hugeai.py "futuristic city, industrial, cyberpunk, midnight, stars, huge planets, milky way galaxy in sky, lake, reflection, photo-realistic, ultra realism, vivid colorful lights, cyberpunk space marine holding futuristic rail gun watching the city from afar" --guidance 3.5 --num 20 --seed 2000 --sr 1
+poetry run python hugeai.py "futuristic city, industrial, cyberpunk, midnight, stars, huge planets, milky way galaxy in sky, lake, reflection, photo-realistic, ultra realism, vivid colorful lights, cyberpunk space marine holding futuristic rail gun watching the city from afar" --guidance 3.5 --num 10 --seed 2000 --sr 8
+```
+
+To generate the cover photo, use:
+
+```
+poetry run python hugeai.py "ultra realistic, photo realistic, futuristic cityscape metropolis on a round planet in space, galaxies, fantasy sci-fi, planets with rings" --seed 896914514
 ```
 
 ## Output
