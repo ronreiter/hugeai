@@ -18,27 +18,21 @@ This repository contains a command-line interface (CLI) tool for generating imag
 - PyTorch
 - Hugging Face `diffusers` library
 - RealESRGAN
-- Other dependencies (see `requirements.txt`)
 
 ## Installation
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/flux-cli-tool.git
-   cd flux-cli-tool
+   git clone https://github.com/ronreiter/hugeai.git
+   cd hugeai
    ```
 
 2. Install the required packages:
    ```
-   pip install -r requirements.txt
+   poetry install
    ```
 
-3. Install RealESRGAN:
-   ```
-   pip install git+https://github.com/ai-forever/Real-ESRGAN.git
-   ```
-
-4. Set up your Hugging Face token:
+3.Set up your Hugging Face token (FLUX.dev requires a token):
    - Create a `.env` file in the project root
    - Add your Hugging Face token: `HF_TOKEN=your_token_here`
 
@@ -56,8 +50,8 @@ python flux_cli_tool.py "your prompt here" [options]
 - `--height`: Image height (default: 1024)
 - `--iterations`: Number of inference steps (default: 30)
 - `--guidance`: Guidance scale (default: 3.5)
-- `--seed`: Starting seed for image generation (default: 0)
-- `--num`: Number of images to generate (default: 1)
+- `--seed`: Starting seed for image generation (default: random)
+- `--num`: Number of images to generate (incrementing seed) (default: 1)
 - `--sr`: Super resolution scale (2, 4, or 8)
 
 ### Example
@@ -89,4 +83,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-[Specify your license here]
+MIT
