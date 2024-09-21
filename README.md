@@ -1,4 +1,6 @@
-# FLUX CLI Image Generation Tool
+# Huge Image Generation Tool
+
+![example.png](example.png)
 
 This repository contains a command-line interface (CLI) tool for generating images using the FLUX model, with optional super-resolution capabilities. The tool leverages the power of the FLUX model for image generation and RealESRGAN for super-resolution upscaling.
 
@@ -69,7 +71,7 @@ poetry run python hugeai.py "futuristic city, industrial, cyberpunk, midnight, s
 To generate the cover photo, use:
 
 ```
-poetry run python hugeai.py "ultra realistic, photo realistic, futuristic cityscape metropolis on a round planet in space, galaxies, fantasy sci-fi, planets with rings" --seed 896914514
+poetry run python hugeai.py "ultra realistic, photo realistic, futuristic cityscape metropolis with vegitation on a round surface in space inside a glass spherical dome, galaxies, stars, fantasy sci-fi, huge planets" --num 20 --guidance 5
 ```
 
 ## Output
