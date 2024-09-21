@@ -14,7 +14,7 @@ This repository contains a command-line interface (CLI) tool for generating imag
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.11+
 - PyTorch
 - Hugging Face `diffusers` library
 - RealESRGAN
