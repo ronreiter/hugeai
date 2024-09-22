@@ -21,6 +21,7 @@ numba = "^0.60.0"
 realesrgan = {git = "https://github.com/sberbank-ai/Real-ESRGAN.git"}
 python-slugify = "^8.0.4"
 aura-sr = "^0.0.4"
+piexif = "^1.1.3"
 
 
 [build-system]
