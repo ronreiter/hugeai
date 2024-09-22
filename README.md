@@ -54,6 +54,7 @@ poetry run python hugeai.py "your prompt here" [options]
 - `--num`: Number of images to generate (incrementing seed) (default: 1)
 - `--sr`: Super resolution scale (1, 2, 4, or 8) (default: 8)
 - `--sr-aura`: 4x super resolution scale with Aura (better for realistic pictures)
+- `--format`: Image format (png, jpg) (default: png)
 
 ### Example
 
