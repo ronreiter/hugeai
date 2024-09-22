@@ -52,7 +52,8 @@ poetry run python hugeai.py "your prompt here" [options]
 - `--guidance`: Guidance scale (default: 3.5)
 - `--seed`: Starting seed for image generation (default: random)
 - `--num`: Number of images to generate (incrementing seed) (default: 1)
-- `--sr`: Super resolution scale (2, 4, or 8)
+- `--sr`: Super resolution scale (1, 2, 4, or 8) (default: 8)
+- `--sr-aura`: 4x super resolution scale with Aura (better for realistic pictures)
 
 ### Example
 
