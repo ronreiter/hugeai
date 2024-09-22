@@ -82,7 +82,7 @@ def generate_images(prompt, width, height, guidance, iterations, seed, num_image
 
     for i in range(num_images):
         image_num = seed + i + 1
-        base_filename = f"outputs/{dir_name}/num_{image_num}_it_{iterations}_guidance_{guidance}"
+        base_filename = f"outputs/{dir_name}/w_{width}_h_{height}_num_{image_num}_it_{iterations}_guidance_{guidance}"
         filename = f"{base_filename}_sr_1.{format}"
 
         title = f"{prompt} --guidance {guidance} --iterations {iterations} --seed {seed}"
