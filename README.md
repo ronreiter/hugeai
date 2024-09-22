@@ -41,7 +41,7 @@ This repository contains a command-line interface (CLI) tool for generating imag
 Run the script with the following command:
 
 ```
-python flux_cli_tool.py "your prompt here" [options]
+poetry run python hugeai.py "your prompt here" [options]
 ```
 
 ### Options
