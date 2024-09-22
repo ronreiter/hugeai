@@ -160,7 +160,7 @@ def main():
         height=args.height,
         guidance=args.guidance,
         iterations=args.iterations,
-        seed=args.seed if args.seed else random.randint(0, 2 ** 32 - 1),
+        seed=(args.seed-1) if args.seed else random.randint(0, 2 ** 32 - 1),
         num_images=args.num,
         sr_scale=args.sr,
         sr_aura=args.sr_aura,
